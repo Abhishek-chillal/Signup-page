@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Login</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /login route -->
+          <form action="/form" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username" placeholder="enter your email">
+            </div>
+            <div class="d-flex align-items-start bg-light mb-3" style="height: 50px;">
+                <input type="text" placeholder="enter first name" name="fn1">
+                <input type="text" placeholder="enter first name" name="fn1">
+                <input type="text" placeholder="enter first name" name="fn1">
+                <input type="text" placeholder="enter first name" name="fn1">
+              </div>
+              <div class="d-flex align-items-center bg-light mb-3" style="height: 100px;">
+                <div class="col">One of three columns</div>
+                <div class="col">One of three columns</div>
+                <div class="col">One of three columns</div>
+              </div>
+              <div class="d-flex align-items-end bg-light mb-3" style="height: 100px;">
+                <div class="col">One of three columns</div>
+                <div class="col">One of three columns</div>
+                <div class="col">One of three columns</div>
+              </div>
+            <button type="submit" class="btn btn-dark">SAVE</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign In with Google
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
